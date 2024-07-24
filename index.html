@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Validator</h1>
+        <div class="section">
+            <h2>Validate Credit Card</h2>
+            <input type="text" id="cardNumber" placeholder="Enter card number (comma-separated)">
+            <button onclick="validateCard()">Validate Card</button>
+            <p id="validateResult"></p>
+        </div>
+        <div class="section">
+            <h2>Find Invalid Cards</h2>
+            <button onclick="findInvalid()">Find Invalid Cards</button>
+            <p id="invalidResult"></p>
+        </div>
+        <div class="section">
+            <h2>Identify Card Companies</h2>
+            <button onclick="identifyCompanies()">Identify Companies</button>
+            <p id="companyResult"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
